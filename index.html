@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width,initial-scale=1.0">
+        <tittle>LOJA IRÍS</tittle>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>IRÍS</h1>
+            <div class="carrinho">
+                <h2>🛒 carrinho</h2>
+                <p>Itens: <span id="contador">0</span></p>
+                <p>Total: R$<span id="total">0</span></p>
+
+                <ul id="listaCarrinho"></ul>
+            </div>
+        </header>
+
+        <section class="produtos">
+
+            <div class="produto">
+               <img src="https://i.pinimg.com/originals/35/1d/e8/351de8f3934e4944a29af29ab87f1fff.jpg" alt="LOVITO SAIAS">
+               <h3>LOVITO SAIAS</h3>
+               <p>180</p> 
+               <button onclick="adicionarCarrinho('LOVITO SAIAS', 180)">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://i.pinimg.com/736x/7f/81/73/7f8173886dbd1b6573e400f1b02c2f6f.jpg" alt="CONJUNTO FEMININO">
+                <h3>CONJUNTO FEMININO</h3>
+                <p>199</p>
+                <button onclick="adicionarCarrinho('CONJUNTO FEMININO', 199)">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://i.pinimg.com/originals/ec/e1/4d/ece14da2f4eb930d28e1be9a842dc7a9.jpg" alt="CALÇA PANTALONA">
+                <h3>CALÇA PANTALONA</h3>
+                <P>160</P>
+                <button onclick="adicionarCarrinho('CALÇA PANTALONA', 160)">Adicionar</button>
+            </div>
+
+            <div class="produto">
+                <img src="https://i.pinimg.com/736x/cc/db/91/ccdb9135901516d335e2578d22582636.jpg" alt="macacão de mangas volumosas com botões">
+                <h3>macacão de mangas volumosas com botões</h3>
+                <P>129.99</P>
+                <button onclick="adicionarCarrinho('macacão de mangas volumosas com botões', 129.99)">Adicionar</button>
+            </div>
+
+        </section>
+
+        <!-- FORMAS DE PAGAMENTO -->
+<section class="pagamentos">
+    <h2>Formas de Pagamento</h2>
+    
+    <div class="formas">
+
+        <a href="pagamento-cartao.html" class="forma">
+            <img src="https://img.icons8.com/color/48/000000/visa.png"/>
+            <p>Cartão de Crédito</p>
+        </a>
+
+        <a href="pagamento-debito.html" class="forma">
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png"/>
+            <p>Cartão de Débito</p>
+        </a>
+
+        <!-- LINK DIRETO PARA WHATSAPP -->
+        <a href="https://wa.me/5599999999999" target="_blank" class="forma">
+            <img src="https://img.icons8.com/color/48/000000/pix.png"/>
+            <p>Pix</p>
+        </a>
+
+        <a href="boleto.html" class="forma">
+            <img src="https://img.icons8.com/color/48/000000/boleto-bankario.png"/>
+            <p>Boleto Bancário</p>
+        </a>
+
+    </div>
+</section>
+
+        <footer>
+            © 2026 loja Irís - Todos os direitos reservados
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
