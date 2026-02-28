@@ -38,13 +38,21 @@ header {
     border-radius: 5px;
 }
 
-.carrinho {
-    position: fixed;
-    right: 20px;
-    top: 100px;
-    width: 250px;
-    max-height: 300px;
-    overflow-y: auto;
+.seu-carrinho {
+  /* O 'fixed' fixa o elemento em relação à janela do navegador */
+  position: fixed; 
+  
+  /* Distância do topo e da lateral direita */
+  top: 20px; 
+  right: 20px; 
+  
+  /* O z-index garante que ele fique na frente das fotos das roupas */
+  z-index: 1000; 
+
+  /* Opcional: Adicione um fundo para ele não ficar transparente sobre as fotos */
+  background-color: #121212; 
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .produtos {
